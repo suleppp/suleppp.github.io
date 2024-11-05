@@ -10,46 +10,51 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', monospace;
         }
 
         body {
-            background-color: #f4f4f9;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         /* 头部样式 */
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
+            background-color: #4b6584;
+            color: #f7f1e3;
+            padding: 1.5rem;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
 
         /* 导航栏 */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
-            padding: 0.5rem;
+            background-color: #2d98da;
+            padding: 0.75rem;
         }
 
         nav a {
-            color: #fff;
+            color: #f7f1e3;
             text-decoration: none;
             margin: 0 1rem;
+            font-weight: bold;
         }
 
         nav a:hover {
-            color: #ffd700;
+            color: #ff7979;
         }
 
         /* 主体内容 */
         main {
+            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -62,20 +67,15 @@
             margin-bottom: 2rem;
         }
 
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-
         .profile h2 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: #333;
         }
 
         .profile p {
             color: #555;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         /* 博客文章 */
@@ -87,37 +87,42 @@
         .post {
             background-color: #fff;
             border-radius: 8px;
-            padding: 1rem;
+            padding: 1.5rem;
             margin-bottom: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
 
         .post h3 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #333;
         }
 
         .post p {
             color: #666;
+            line-height: 1.6;
         }
 
         /* 页脚 */
         footer {
+            background-color: #4b6584;
+            color: #f7f1e3;
             text-align: center;
             padding: 1rem;
-            background-color: #333;
-            color: #fff;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
         }
 
         .social-icons a {
-            color: #fff;
+            color: #f7f1e3;
             margin: 0 0.5rem;
             text-decoration: none;
             font-size: 1.2rem;
         }
 
         .social-icons a:hover {
-            color: #ffd700;
+            color: #ff7979;
         }
     </style>
 </head>
@@ -146,10 +151,6 @@
 
         <!-- 博客文章列表 -->
         <section class="blog-posts">
-            <div class="post">
-                <h3>我的第一篇博客</h3>
-                <p>这是一篇示例文章，内容简要说明主题。点击查看更多内容。</p>
-            </div>
             <div class="post">
                 <h3>编程之旅</h3>
                 <p>关于我在编程上的一些见解和心得体会...</p>
