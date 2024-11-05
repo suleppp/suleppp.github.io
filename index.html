@@ -10,12 +10,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Courier New', monospace;
+            font-family: 'Roboto', sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #ffecd2, #fcb69f);
-            color: #333;
+            background: linear-gradient(135deg, #ffffff, #f0f5f9);
+            color: #2f3542;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -23,33 +23,37 @@
 
         /* 头部样式 */
         header {
-            background-color: #4b6584;
-            color: #f7f1e3;
+            background-color: #2d3436;
+            color: #ffffff;
             padding: 1.5rem;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             font-size: 2.5rem;
+            color: #e17055;
         }
 
         /* 导航栏 */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #2d98da;
+            background-color: #74b9ff;
             padding: 0.75rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         }
 
         nav a {
-            color: #f7f1e3;
+            color: #ffffff;
             text-decoration: none;
-            margin: 0 1rem;
+            margin: 0 1.5rem;
             font-weight: bold;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #ff7979;
+            color: #ffeaa7;
         }
 
         /* 主体内容 */
@@ -59,6 +63,7 @@
             flex-direction: column;
             align-items: center;
             padding: 2rem;
+            background: #f8f9fa;
         }
 
         /* 个人信息 */
@@ -69,11 +74,11 @@
 
         .profile h2 {
             font-size: 1.8rem;
-            color: #333;
+            color: #2d3436;
         }
 
         .profile p {
-            color: #555;
+            color: #636e72;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -85,27 +90,33 @@
         }
 
         .post {
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 8px;
             padding: 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .post:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
         }
 
         .post h3 {
             font-size: 1.5rem;
-            color: #333;
+            color: #2d3436;
         }
 
         .post p {
-            color: #666;
+            color: #636e72;
             line-height: 1.6;
         }
 
         /* 页脚 */
         footer {
-            background-color: #4b6584;
-            color: #f7f1e3;
+            background-color: #2d3436;
+            color: #ffffff;
             text-align: center;
             padding: 1rem;
             width: 100%;
@@ -115,14 +126,15 @@
         }
 
         .social-icons a {
-            color: #f7f1e3;
+            color: #ffffff;
             margin: 0 0.5rem;
             text-decoration: none;
             font-size: 1.2rem;
+            transition: color 0.3s;
         }
 
         .social-icons a:hover {
-            color: #ff7979;
+            color: #e17055;
         }
     </style>
 </head>
@@ -145,7 +157,7 @@
     <main>
         <!-- 个人信息 -->
         <section class="profile">
-            <h2>你好，我是 sule</h2>
+            <h2>你好，我是 Sule</h2>
             <p>欢迎来到我的个人博客，在这里我分享我的知识和经验。</p>
         </section>
 
